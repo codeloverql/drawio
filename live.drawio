@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-31T16:56:19.998Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="gqVr0zHYiQgGdn8a4dG2" version="24.4.13" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-31T16:57:26.506Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="xxrARvb_ruLCEyfl1zEi" version="24.4.13" type="github">
   <diagram name="第 1 页" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -414,8 +414,8 @@
         <mxCell id="x6Jtk6zeUvlKm-oWEQXY-122" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="x6Jtk6zeUvlKm-oWEQXY-123" target="x6Jtk6zeUvlKm-oWEQXY-128" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="x6Jtk6zeUvlKm-oWEQXY-123" value="status&amp;lt;&amp;lt;32+ts&lt;br&gt;status=0 未确认&lt;div&gt;statue=1 确认&lt;/div&gt;&lt;div&gt;status=2 丢弃&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="540" y="720" width="110" height="90" as="geometry" />
+        <mxCell id="x6Jtk6zeUvlKm-oWEQXY-123" value="status&amp;lt;&amp;lt;32+ts&lt;br&gt;status=0 未确认&lt;div&gt;statue=1 确认&lt;/div&gt;&lt;div&gt;status=2 丢弃/非可靠消息&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="540" y="725" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="x6Jtk6zeUvlKm-oWEQXY-124" value="msgid" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="446" y="790" width="54" height="50" as="geometry" />
