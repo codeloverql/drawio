@@ -1,9 +1,63 @@
-<mxfile host="app.diagrams.net" modified="2024-05-31T17:05:16.494Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" version="24.4.13" etag="9Rj6FCq-84R11DDh-OvS" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-31T17:13:39.939Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="y70rKua17_ipSGzgzuAW" version="24.4.13" type="github">
   <diagram name="第 1 页" id="NPgBcdt4-zhkseoK6-Oz">
-    <mxGraphModel>
+    <mxGraphModel dx="1306" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="IsW_-CaDHvVnwGVKBBUv-17" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="500" width="760" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="IsW_-CaDHvVnwGVKBBUv-13" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="350" width="760" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="IsW_-CaDHvVnwGVKBBUv-6" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="200" width="760" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="IsW_-CaDHvVnwGVKBBUv-1" value="QA" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="152" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IsW_-CaDHvVnwGVKBBUv-2" value="摘要" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IsW_-CaDHvVnwGVKBBUv-3" value="速读" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IsW_-CaDHvVnwGVKBBUv-4" value="解读" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IsW_-CaDHvVnwGVKBBUv-7" value="场景" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="130" y="200" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IsW_-CaDHvVnwGVKBBUv-8" value="搜索增强" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IsW_-CaDHvVnwGVKBBUv-9" value="prompt改写" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IsW_-CaDHvVnwGVKBBUv-10" value="原文召回" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IsW_-CaDHvVnwGVKBBUv-11" value="意图识别" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IsW_-CaDHvVnwGVKBBUv-12" value="推荐问题" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IsW_-CaDHvVnwGVKBBUv-14" value="能力" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="130" y="350" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IsW_-CaDHvVnwGVKBBUv-15" value="LLM" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="525" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IsW_-CaDHvVnwGVKBBUv-16" value="embedding" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IsW_-CaDHvVnwGVKBBUv-18" value="模型" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="130" y="500" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IsW_-CaDHvVnwGVKBBUv-19" value="向量数据库" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
