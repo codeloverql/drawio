@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-01T16:02:43.510Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="sVMFrHn_zHuhdQobKJog" version="24.4.13" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2024-06-01T16:06:46.969Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="ZV7z_Rr4rjjyhWB7u2u6" version="24.4.13" type="github" pages="4">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1079,6 +1079,9 @@
         <mxCell id="bxa8RqcD89XLqhrJgpsZ-157" value="&lt;div style=&quot;text-align: left;&quot;&gt;千兆网卡单房间：&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;最大：送礼消息128字节+发言256字节+其他128字节=512字节&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;512*10w*0.7压缩=350w字节=3.5MB&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
           <mxGeometry x="-165" y="30" width="350" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="ZDgZF7WNOIpqBr-gDZdw-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="bxa8RqcD89XLqhrJgpsZ-1" source="ZDgZF7WNOIpqBr-gDZdw-1" target="ZDgZF7WNOIpqBr-gDZdw-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="ZDgZF7WNOIpqBr-gDZdw-1" value="1.单房间合并：&lt;div&gt;组播消息上游调过来是通过roomid做的一致性hash路由&lt;/div&gt;&lt;div&gt;在服务内部会对单个房间的消息进行合并，2s内的消息合并，2s的定时任务进行推送&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2.消息分级：&lt;/div&gt;&lt;div&gt;针对送礼，进退房，发言，信令等消息，进行分级：信令&amp;gt;送礼&amp;gt;发言&amp;gt;进退房广播&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3.超过10w的房间，才会开启限流，进行丢弃，目前基本不会触发这个阈值&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;4.可靠消息，根据类型进行配置，上游不能控制，严格控制主调来源，防止广播风暴&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
           <mxGeometry x="295" y="1038" width="470" height="150" as="geometry" />
         </mxCell>
@@ -1127,8 +1130,8 @@
         <mxCell id="ZDgZF7WNOIpqBr-gDZdw-18" value="&lt;div style=&quot;text-align: left;&quot;&gt;现象：进程偶现oom，实际内存还没有用完&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;原因：rpc框架是单进程的，为了利用多核，是采用的proxy+多worker进程&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;并且worker进程为了效率还绑定了cpu的亲和性，然后机器是numa架构的&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;并且运维配置的策略是只在node本地分配内存，不会跨node分配，并且关闭了swap&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;就是说单个node内存用完了，就会oom，即使整个内存还有剩余&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;解决：把亲和性绑定去掉了，并且找运维修改了分配策略，允许去其他node申请内存&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
           <mxGeometry x="-443" y="1495" width="470" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="ZDgZF7WNOIpqBr-gDZdw-20" value="&lt;div style=&quot;text-align: left;&quot;&gt;可能的瓶颈：&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;全量拉取：单房间10w用户的话，8字节*10w=0.8Mb&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;千兆网卡的话：1000/0.8/8=150qps，送礼消息不止这么多&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;如果百万用户的话就是15qps了&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;所以组播需要严格限制请求的频率，上游会做单房间合并的原因&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
-          <mxGeometry x="815" y="1038" width="360" height="100" as="geometry" />
+        <mxCell id="ZDgZF7WNOIpqBr-gDZdw-20" value="&lt;div style=&quot;text-align: left;&quot;&gt;为什么要单房间合并：&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;全量拉取：单房间10w用户的话，8字节*10w=0.8Mb&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;千兆网卡的话：1000/0.8/8=150qps，送礼消息不止这么多&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;另外10w用户，几百的qps，会导致千万的qps&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;所以组播需要严格限制请求的频率，上游会做单房间合并的原因&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
+          <mxGeometry x="815" y="1033" width="360" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
