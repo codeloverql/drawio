@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-06-01T04:02:11.203Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="eCY5gTT99ZS9xQp2jrQr" version="24.4.13" type="github" pages="2">
-  <diagram name="第 1 页" id="U2sys6m2P0nSdcJm8TKS">
-    <mxGraphModel dx="2960" dy="895" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2024-06-01T09:59:48.454Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="SokI35RArved5-Q7-Zaf" version="24.4.13" type="github" pages="2">
+  <diagram name="直播push架构" id="U2sys6m2P0nSdcJm8TKS">
+    <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -442,7 +442,7 @@
           <mxGeometry x="205" y="350" width="65" height="20" as="geometry" />
         </mxCell>
         <mxCell id="x6Jtk6zeUvlKm-oWEQXY-132" value="机器" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="270" y="350" width="60" height="20" as="geometry" />
+          <mxGeometry x="270" y="350" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="x6Jtk6zeUvlKm-oWEQXY-133" value="incr" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="350" y="350" width="50" height="20" as="geometry" />
@@ -456,8 +456,8 @@
         <mxCell id="x6Jtk6zeUvlKm-oWEQXY-136" value="12" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="355" y="320" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="x6Jtk6zeUvlKm-oWEQXY-137" value="线" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="330" y="350" width="30" height="20" as="geometry" />
+        <mxCell id="x6Jtk6zeUvlKm-oWEQXY-137" value="时间线" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="310" y="350" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="x6Jtk6zeUvlKm-oWEQXY-138" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="x6Jtk6zeUvlKm-oWEQXY-139" target="x6Jtk6zeUvlKm-oWEQXY-142" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -474,10 +474,43 @@
         <mxCell id="x6Jtk6zeUvlKm-oWEQXY-142" value="解决时钟回拨" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" parent="1" vertex="1">
           <mxGeometry x="295" y="268" width="100" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="lPl_-dJKi4ZWcJyu0Dkh-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="200" width="500" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lPl_-dJKi4ZWcJyu0Dkh-2" value="magic" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="200" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lPl_-dJKi4ZWcJyu0Dkh-3" value="len" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="200" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lPl_-dJKi4ZWcJyu0Dkh-4" value="头len" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="200" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lPl_-dJKi4ZWcJyu0Dkh-5" value="编码" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="200" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lPl_-dJKi4ZWcJyu0Dkh-7" value="压缩" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="200" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lPl_-dJKi4ZWcJyu0Dkh-8" value="加密" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="200" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lPl_-dJKi4ZWcJyu0Dkh-9" value="..." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="200" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lPl_-dJKi4ZWcJyu0Dkh-10" value="数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="200" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lPl_-dJKi4ZWcJyu0Dkh-11" value="协议重要字段" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="865" y="200" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lPl_-dJKi4ZWcJyu0Dkh-12" value="头扩展" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="200" width="50" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="F2daYsPlVjmZp15osxFa" name="第 2 页">
+  <diagram id="F2daYsPlVjmZp15osxFa" name="AI问答架构">
     <mxGraphModel dx="1306" dy="895" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
