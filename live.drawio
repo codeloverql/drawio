@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-01T11:06:15.840Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="sU53qdGDShfL7zNNrUgx" version="24.4.13" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2024-06-01T11:07:16.138Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="7qGUV1zik6Lau-UEnSQ7" version="24.4.13" type="github" pages="3">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -629,7 +629,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="gg-zCY3S3wDtr2VuZ_-A" name="活动">
-    <mxGraphModel dx="2363" dy="1020" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2363" dy="2189" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -881,6 +881,33 @@
         </mxCell>
         <mxCell id="ebTP9VvHCpq9uHz0mKpL-10" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" vertex="1" parent="1">
           <mxGeometry x="884.36" y="210" width="51.28" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ebTP9VvHCpq9uHz0mKpL-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ebTP9VvHCpq9uHz0mKpL-13" target="xs7M36CM43rjV9m2G4Hp-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="198" y="-10" />
+              <mxPoint x="68" y="-10" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ebTP9VvHCpq9uHz0mKpL-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ebTP9VvHCpq9uHz0mKpL-13" target="xs7M36CM43rjV9m2G4Hp-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ebTP9VvHCpq9uHz0mKpL-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ebTP9VvHCpq9uHz0mKpL-13" target="xs7M36CM43rjV9m2G4Hp-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="198" y="-10" />
+              <mxPoint x="328" y="-10" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ebTP9VvHCpq9uHz0mKpL-18" value="发起pk" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ebTP9VvHCpq9uHz0mKpL-17">
+          <mxGeometry x="-0.7828" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ebTP9VvHCpq9uHz0mKpL-13" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" vertex="1" parent="1">
+          <mxGeometry x="172.36" y="-170" width="51.28" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
