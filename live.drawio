@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-01T03:32:31.369Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="ZizJtj-93aS7uENPMAFN" version="24.4.13" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-06-01T03:59:40.498Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="hPnrB6BY9kqsePDx5hp-" version="24.4.13" type="github" pages="2">
   <diagram name="第 1 页" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="895" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -527,6 +527,9 @@
         <mxCell id="lSxitEgj5gbUgXhKhUQe-15" value="LLM" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="152" y="525" width="270" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="RS9Y_8d8AtRgy_yMVYbU-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lSxitEgj5gbUgXhKhUQe-16" target="RS9Y_8d8AtRgy_yMVYbU-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="lSxitEgj5gbUgXhKhUQe-16" value="embedding" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="440" y="525" width="120" height="60" as="geometry" />
         </mxCell>
@@ -538,6 +541,19 @@
         </mxCell>
         <mxCell id="lSxitEgj5gbUgXhKhUQe-19" value="索引计算" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="740" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RS9Y_8d8AtRgy_yMVYbU-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lSxitEgj5gbUgXhKhUQe-20" target="RS9Y_8d8AtRgy_yMVYbU-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RS9Y_8d8AtRgy_yMVYbU-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="lSxitEgj5gbUgXhKhUQe-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="810" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RS9Y_8d8AtRgy_yMVYbU-8" value="性能优化" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RS9Y_8d8AtRgy_yMVYbU-6">
+          <mxGeometry x="0.1424" y="2" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="lSxitEgj5gbUgXhKhUQe-20" value="tokenizer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="590" y="525" width="120" height="60" as="geometry" />
@@ -553,6 +569,15 @@
         </mxCell>
         <mxCell id="lSxitEgj5gbUgXhKhUQe-24" value="sse" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="500" y="100" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RS9Y_8d8AtRgy_yMVYbU-2" value="&lt;div&gt;分词器&lt;/div&gt;文本转token" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="605" y="665" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RS9Y_8d8AtRgy_yMVYbU-4" value="词嵌入&lt;br&gt;把文本转成维度固定的向量" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="415" y="665" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RS9Y_8d8AtRgy_yMVYbU-7" value="&lt;ol&gt;&lt;li&gt;cpu密集型&lt;/li&gt;&lt;li&gt;python无法利用多核&lt;/li&gt;&lt;li&gt;跨语言调用&lt;/li&gt;&lt;/ol&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="1">
+          <mxGeometry x="730" y="763" width="170" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
