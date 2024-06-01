@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-31T17:04:00.218Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="N_XynDbhlQZ7n5wsA0fc" version="24.4.13" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-01T03:31:51.384Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="Q9CAsLSiagiIx53iPDCz" version="24.4.13" type="github" pages="2">
   <diagram name="第 1 页" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -473,6 +473,86 @@
         </mxCell>
         <mxCell id="x6Jtk6zeUvlKm-oWEQXY-142" value="解决时钟回拨" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" parent="1" vertex="1">
           <mxGeometry x="295" y="268" width="100" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="F2daYsPlVjmZp15osxFa" name="第 2 页">
+    <mxGraphModel dx="1306" dy="895" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="490" width="760" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="350" width="760" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="200" width="760" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-4" value="QA" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="152" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-5" value="摘要" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-6" value="速读" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-7" value="解读" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-8" value="场景" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="130" y="200" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-9" value="搜索增强" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="152" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-10" value="prompt改写" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-11" value="原文召回" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-12" value="意图识别" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-13" value="推荐问题" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-14" value="能力" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="130" y="350" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-15" value="LLM" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="152" y="525" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-16" value="embedding" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-17" value="模型" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="130" y="490" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-18" value="向量数据库" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-19" value="索引计算" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-20" value="tokenizer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-21" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="70" width="760" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-22" value="http" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="152" y="100" width="328" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-23" value="接入" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="130" y="70" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lSxitEgj5gbUgXhKhUQe-24" value="sse" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="100" width="360" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
