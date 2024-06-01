@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-01T11:11:38.050Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="ieLRvNVL8LlnURhtMff8" version="24.4.13" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2024-06-01T13:03:32.476Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="PNVxh1oHGh2FqEUgYcDY" version="24.4.13" type="github" pages="3">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -388,8 +388,8 @@
         <mxCell id="x6Jtk6zeUvlKm-oWEQXY-110" value="&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;gonet-&amp;gt;tnet网络模型优化&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;内存下降45%&lt;/li&gt;&lt;li&gt;cpu下降20%&lt;/li&gt;&lt;li&gt;单机连接数提升100%&lt;/li&gt;&lt;/ol&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" parent="1" vertex="1">
           <mxGeometry x="860" y="670" width="200" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="x6Jtk6zeUvlKm-oWEQXY-111" value="待优化：连接层支持组播方案&lt;br&gt;解决超大直播间网卡瓶颈" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" parent="1" vertex="1">
-          <mxGeometry x="980" y="400" width="180" height="40" as="geometry" />
+        <mxCell id="x6Jtk6zeUvlKm-oWEQXY-111" value="优化：连接层支持组播方案&lt;br&gt;解决超大直播间网卡瓶颈" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" parent="1" vertex="1">
+          <mxGeometry x="980" y="400" width="170" height="40" as="geometry" />
         </mxCell>
         <mxCell id="x6Jtk6zeUvlKm-oWEQXY-112" value="1.单房间消息合并&lt;br&gt;2.消息分级，消息丢弃&lt;br&gt;3.超大房间限流，降级丢弃" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" parent="1" vertex="1">
           <mxGeometry x="-12" y="545" width="170" height="60" as="geometry" />
