@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-01T16:32:06.048Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="cM0tzBnwRqarYtF6ET8Y" version="24.4.13" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2024-06-01T16:38:13.399Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="hERjw18OeExTqwlPAjmK" version="24.4.13" type="github" pages="4">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -904,6 +904,9 @@
         <mxCell id="bxa8RqcD89XLqhrJgpsZ-113" value="&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;gonet-&amp;gt;tnet网络模型优化&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;内存下降45%&lt;/li&gt;&lt;li&gt;cpu下降20%&lt;/li&gt;&lt;li&gt;单机连接数提升100%&lt;/li&gt;&lt;/ol&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
           <mxGeometry x="860" y="670" width="200" height="90" as="geometry" />
         </mxCell>
+        <mxCell id="V5EH8akgTNUjjNnxu9XO-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="bxa8RqcD89XLqhrJgpsZ-1" source="bxa8RqcD89XLqhrJgpsZ-114" target="V5EH8akgTNUjjNnxu9XO-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="bxa8RqcD89XLqhrJgpsZ-114" value="优化：连接层支持组播方案&lt;br&gt;解决超大直播间网卡瓶颈" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
           <mxGeometry x="980" y="400" width="170" height="40" as="geometry" />
         </mxCell>
@@ -1135,6 +1138,9 @@
               <mxPoint x="-610" y="997" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="V5EH8akgTNUjjNnxu9XO-2" value="连接层维护房间：用户组连接的关系&lt;div&gt;直接支持对房间的广播&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;注意点：同一个房间的用户列表可能出现在不同的机器上&lt;/div&gt;&lt;div&gt;因为用户到后台是有负载均衡的，不会根据房间进行路由&lt;/div&gt;&lt;div&gt;所以需要对所有节点进行广播&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
+          <mxGeometry x="1241" y="370" width="320" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
