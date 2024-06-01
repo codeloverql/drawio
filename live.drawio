@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-01T11:07:16.138Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="7qGUV1zik6Lau-UEnSQ7" version="24.4.13" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2024-06-01T11:10:48.494Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="PLbG8hATwCKyKtNvYYUY" version="24.4.13" type="github" pages="3">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -820,6 +820,11 @@
               <mxPoint x="-80" y="750" />
               <mxPoint x="-80" y="540" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d5rrUPnheSEeBodwmt4X-1" value="资金池设计&lt;div&gt;保证不超发&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="xs7M36CM43rjV9m2G4Hp-75">
+          <mxGeometry x="-0.2668" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="xs7M36CM43rjV9m2G4Hp-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="xs7M36CM43rjV9m2G4Hp-74" target="xs7M36CM43rjV9m2G4Hp-22">
