@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-01T15:43:54.855Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="JXIQwfwc8GW9aGcqUsbz" version="24.4.13" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2024-06-01T16:02:43.510Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="sVMFrHn_zHuhdQobKJog" version="24.4.13" type="github" pages="4">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -927,6 +927,15 @@
         <mxCell id="bxa8RqcD89XLqhrJgpsZ-115" value="1.单房间消息合并&lt;br&gt;2.消息分级，消息丢弃&lt;br&gt;3.超大房间限流，降级丢弃" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
           <mxGeometry x="-12" y="545" width="170" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="ZDgZF7WNOIpqBr-gDZdw-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="bxa8RqcD89XLqhrJgpsZ-1" source="bxa8RqcD89XLqhrJgpsZ-116" target="ZDgZF7WNOIpqBr-gDZdw-20">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="710" />
+              <mxPoint x="230" y="1000" />
+              <mxPoint x="990" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="bxa8RqcD89XLqhrJgpsZ-116" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;全量拉取，100w房间，目前最大10w&lt;/span&gt;&lt;/div&gt;&lt;div&gt;数据量8mb，千兆网卡最大qps=1000/8/8=15qps&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
           <mxGeometry x="-60" y="690" width="280" height="40" as="geometry" />
         </mxCell>
@@ -935,6 +944,15 @@
         </mxCell>
         <mxCell id="bxa8RqcD89XLqhrJgpsZ-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.504;entryY=0.015;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="bxa8RqcD89XLqhrJgpsZ-1" source="bxa8RqcD89XLqhrJgpsZ-8" target="bxa8RqcD89XLqhrJgpsZ-113">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZDgZF7WNOIpqBr-gDZdw-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.546;entryY=0.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="bxa8RqcD89XLqhrJgpsZ-1" source="bxa8RqcD89XLqhrJgpsZ-119" target="ZDgZF7WNOIpqBr-gDZdw-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-170" y="1460" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="50" y="900" />
+              <mxPoint x="50" y="1502" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="bxa8RqcD89XLqhrJgpsZ-119" value="oom排查和优化" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
           <mxGeometry x="65" y="885" width="110" height="30" as="geometry" />
@@ -1064,6 +1082,9 @@
         <mxCell id="ZDgZF7WNOIpqBr-gDZdw-1" value="1.单房间合并：&lt;div&gt;组播消息上游调过来是通过roomid做的一致性hash路由&lt;/div&gt;&lt;div&gt;在服务内部会对单个房间的消息进行合并，2s内的消息合并，2s的定时任务进行推送&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2.消息分级：&lt;/div&gt;&lt;div&gt;针对送礼，进退房，发言，信令等消息，进行分级：信令&amp;gt;送礼&amp;gt;发言&amp;gt;进退房广播&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3.超过10w的房间，才会开启限流，进行丢弃，目前基本不会触发这个阈值&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;4.可靠消息，根据类型进行配置，上游不能控制，严格控制主调来源，防止广播风暴&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
           <mxGeometry x="295" y="1038" width="470" height="150" as="geometry" />
         </mxCell>
+        <mxCell id="ZDgZF7WNOIpqBr-gDZdw-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="bxa8RqcD89XLqhrJgpsZ-1" source="ZDgZF7WNOIpqBr-gDZdw-2" target="ZDgZF7WNOIpqBr-gDZdw-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="ZDgZF7WNOIpqBr-gDZdw-2" value="1.碎片整理：&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;出现原因：退房或者超时被清理，会导致数组出现空洞&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;有什么影响：不进行整理的话，会导致next指针一直往后移，内存占用上涨，而实际可能并没有很多人在房间内&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如何实现：当next到达tail的时候，会进行判断，利用率低于70%，进行整理，整理流程大概是&lt;/div&gt;&lt;div&gt;在head和next之间，把next之前的非空元素挪动到前面&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;需要注意什么：由于rpc框架是单进程多协程的，所以防止出现大量整理，导致cpu飙升，会进行渐进式的整理，每次整理一部分，并且记录下&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2.支持持久化：&lt;/div&gt;&lt;div&gt;由于mmap是用的有名映射，所以天然支持持久化&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;不使用mmap：&lt;/div&gt;&lt;div&gt;1.需要设计持久化，这样的话，数据会有两份，一份在内存中，一部分在文件缓存中，并且会进行大量的拷贝&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
           <mxGeometry x="77.5" y="1230" width="770" height="240" as="geometry" />
         </mxCell>
@@ -1102,6 +1123,12 @@
         </mxCell>
         <mxCell id="ZDgZF7WNOIpqBr-gDZdw-15" value="mmap的使用场景：&lt;div&gt;1.私有匿名映射：&lt;/div&gt;&lt;div&gt;主要用于申请内存，一般进程申请大内存的时候，会用到，比如tcmalloc，或者go里面申请内存来自己管理时候&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2.私有有名映射：&lt;/div&gt;&lt;div&gt;主要用于动态库加载，大文件的加载，多进程同时读一份文件的情况，读时共享，写时复制&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3.共享匿名映射：&lt;/div&gt;&lt;div&gt;主要用于父子进程通信&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;4.共享有名映射：&lt;/div&gt;&lt;div&gt;主要用于多进程通信，多进程共享同一份数据&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5.0拷贝：&lt;/div&gt;&lt;div&gt;mmap可以映射一个文件，直接write，避免的数据从磁盘加载到用户态。&lt;/div&gt;&lt;div&gt;上下文切换：mmap（用户--内核--用户）+write（用户--内核--用户）= 4次&lt;/div&gt;&lt;div&gt;数据流向：磁盘dma--内核内存（用户态共用）--cpu--socket内存--网卡dma&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;6.另外一种零拷贝：&lt;/div&gt;&lt;div&gt;sendfile，直接send一个文件&lt;/div&gt;&lt;div&gt;上下文切换：sendfile（用户--内核--用户）= 2次&lt;/div&gt;&lt;div&gt;数据流向：磁盘dma--内核内存--cpu-- socket内存--网卡dma&lt;/div&gt;&lt;div&gt;内核和socket的内存还能进一步合并成一个，需要支持SG-DMA的网卡&lt;/div&gt;&lt;div&gt;缺点：无法在用户态对数据进行修改，只能发送静态数据&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
           <mxGeometry x="77.5" y="1485" width="610" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="ZDgZF7WNOIpqBr-gDZdw-18" value="&lt;div style=&quot;text-align: left;&quot;&gt;现象：进程偶现oom，实际内存还没有用完&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;原因：rpc框架是单进程的，为了利用多核，是采用的proxy+多worker进程&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;并且worker进程为了效率还绑定了cpu的亲和性，然后机器是numa架构的&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;并且运维配置的策略是只在node本地分配内存，不会跨node分配，并且关闭了swap&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;就是说单个node内存用完了，就会oom，即使整个内存还有剩余&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;解决：把亲和性绑定去掉了，并且找运维修改了分配策略，允许去其他node申请内存&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
+          <mxGeometry x="-443" y="1495" width="470" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ZDgZF7WNOIpqBr-gDZdw-20" value="&lt;div style=&quot;text-align: left;&quot;&gt;可能的瓶颈：&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;全量拉取：单房间10w用户的话，8字节*10w=0.8Mb&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;千兆网卡的话：1000/0.8/8=150qps，送礼消息不止这么多&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;如果百万用户的话就是15qps了&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;所以组播需要严格限制请求的频率，上游会做单房间合并的原因&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
+          <mxGeometry x="815" y="1038" width="360" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
