@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-01T16:38:13.399Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="hERjw18OeExTqwlPAjmK" version="24.4.13" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2024-06-01T17:23:06.332Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="sstFgpj6FRjEw-BegczO" version="24.4.13" type="github" pages="4">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -952,6 +952,9 @@
         <mxCell id="bxa8RqcD89XLqhrJgpsZ-119" value="oom排查和优化" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
           <mxGeometry x="65" y="885" width="110" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="V5EH8akgTNUjjNnxu9XO-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="bxa8RqcD89XLqhrJgpsZ-1" source="bxa8RqcD89XLqhrJgpsZ-120" target="V5EH8akgTNUjjNnxu9XO-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="bxa8RqcD89XLqhrJgpsZ-120" value="&lt;ol&gt;&lt;li&gt;原有模型压测：单机50w，7G内存&lt;/li&gt;&lt;li&gt;升级后压测：单机50w，4G&lt;/li&gt;&lt;li&gt;压测百万连接&lt;/li&gt;&lt;/ol&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
           <mxGeometry x="1100" y="675" width="250" height="80" as="geometry" />
         </mxCell>
@@ -1141,6 +1144,9 @@
         </mxCell>
         <mxCell id="V5EH8akgTNUjjNnxu9XO-2" value="连接层维护房间：用户组连接的关系&lt;div&gt;直接支持对房间的广播&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;注意点：同一个房间的用户列表可能出现在不同的机器上&lt;/div&gt;&lt;div&gt;因为用户到后台是有负载均衡的，不会根据房间进行路由&lt;/div&gt;&lt;div&gt;所以需要对所有节点进行广播&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
           <mxGeometry x="1241" y="370" width="320" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="V5EH8akgTNUjjNnxu9XO-4" value="gonet网络模型：&lt;div&gt;一个连接一个协程，同步处理，代码实现方便&lt;/div&gt;&lt;div&gt;问题：&lt;/div&gt;&lt;div&gt;1.协程数量会随着连接数线性增加，每个协程有至少2kb的栈，百万连接协程就2g内存&lt;/div&gt;&lt;div&gt;2.协程数量上涨带来的调度开销，内存占用和gc压力都很大&lt;/div&gt;&lt;div&gt;3.内核每个连接4kb，协程2kb，至少6g，实际开销更大，gc下一次触发的话，会到15g左右，&lt;/div&gt;&lt;div&gt;gc耗时会严重上涨到秒级别，cpu也会大量耗费在gc上&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;解决：&lt;/div&gt;&lt;div&gt;tnet网络模型优化&lt;/div&gt;&lt;div&gt;1.协程和连接解藕，&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
+          <mxGeometry x="1241" y="805" width="510" height="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
