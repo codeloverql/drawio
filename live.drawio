@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-01T11:02:23.453Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="ZOVj5RxnxIYU3M4n7VpK" version="24.4.13" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2024-06-01T11:03:02.229Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="Yeo2mWegxpC89XGdFNu8" version="24.4.13" type="github" pages="3">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -629,7 +629,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="gg-zCY3S3wDtr2VuZ_-A" name="活动">
-    <mxGraphModel dx="2133" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2363" dy="1020" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -779,7 +779,7 @@
         <mxCell id="xs7M36CM43rjV9m2G4Hp-49" value="支付网关" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-380" y="510" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xs7M36CM43rjV9m2G4Hp-50" value="包裹" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+        <mxCell id="xs7M36CM43rjV9m2G4Hp-50" value="包裹&lt;div&gt;mysql&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="-440" y="770" width="60" height="80" as="geometry" />
         </mxCell>
         <mxCell id="xs7M36CM43rjV9m2G4Hp-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xs7M36CM43rjV9m2G4Hp-52" target="xs7M36CM43rjV9m2G4Hp-50">
@@ -794,11 +794,8 @@
         <mxCell id="xs7M36CM43rjV9m2G4Hp-54" value="公司的米大师" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-310" y="630" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="xs7M36CM43rjV9m2G4Hp-55" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="-290" y="770" width="60" height="80" as="geometry" />
-        </mxCell>
         <mxCell id="xs7M36CM43rjV9m2G4Hp-57" value="分布式mysql" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="-280" y="790" width="60" height="80" as="geometry" />
+          <mxGeometry x="-280" y="770" width="60" height="80" as="geometry" />
         </mxCell>
         <mxCell id="xs7M36CM43rjV9m2G4Hp-65" value="送礼相关" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="-520" y="280" width="90" height="30" as="geometry" />
