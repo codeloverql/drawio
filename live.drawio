@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-02T12:15:50.196Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="HBBcVP07Wozb7kTuf0bN" version="24.4.13" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2024-06-02T12:47:31.215Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="pURDvOLYhGfQLiaSoDkL" version="24.4.13" type="github" pages="5">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1373,6 +1373,18 @@
         </mxCell>
         <mxCell id="e5ygJ3nNOSe9Yrahaoav-0" value="每个消息16字节，15wqps，每秒会产生16*15w=240w字节=2.4G&lt;div&gt;消息体是共用的，不会占用很大空间&lt;/div&gt;&lt;div&gt;所以定期删除很重要，如果20s删除一次，那么会占用48G&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
           <mxGeometry x="1030" y="1233" width="370" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WQOB_-elUw2iNiJAE-nh-5" value="心跳策略：&lt;div style=&quot;&quot;&gt;tcp的keepalive保活是7200s（2h），远远无法使用，没有数据交互运营商NAT几分钟就把连接销毁了&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;根据经验&lt;/div&gt;&lt;div style=&quot;&quot;&gt;中国联通移动，nat保活是5分钟&lt;/div&gt;&lt;div style=&quot;&quot;&gt;中国电信是28分钟&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;客户端会按照这个来发心跳，但是不是完全写死的，会根据失败情况动态调整&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
+          <mxGeometry x="1540" y="160" width="560" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="WQOB_-elUw2iNiJAE-nh-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.215;entryY=0.995;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="bxa8RqcD89XLqhrJgpsZ-1" source="bxa8RqcD89XLqhrJgpsZ-8" target="WQOB_-elUw2iNiJAE-nh-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1660" y="240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="850" y="350" />
+              <mxPoint x="1660" y="350" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
