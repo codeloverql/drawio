@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-02T05:40:17.146Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="0P6S-CdZqXx56IN2DTz-" version="24.4.13" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2024-06-02T07:19:29.243Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="_36WuYZ_rh_vXqY9fccC" version="24.4.13" type="github" pages="4">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -516,7 +516,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="live 的副本" id="hugfhMHL9A4iMEHUzqtO">
-    <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3190" dy="1020" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="bxa8RqcD89XLqhrJgpsZ-0" />
         <mxCell id="bxa8RqcD89XLqhrJgpsZ-1" parent="bxa8RqcD89XLqhrJgpsZ-0" />
@@ -999,6 +999,9 @@
         <mxCell id="bxa8RqcD89XLqhrJgpsZ-130" value="msgid" style="rounded=0;whiteSpace=wrap;html=1;" parent="bxa8RqcD89XLqhrJgpsZ-1" vertex="1">
           <mxGeometry x="446" y="940" width="54" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="e5ygJ3nNOSe9Yrahaoav-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="bxa8RqcD89XLqhrJgpsZ-1" source="bxa8RqcD89XLqhrJgpsZ-131" target="e5ygJ3nNOSe9Yrahaoav-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="bxa8RqcD89XLqhrJgpsZ-131" value="快速筛选：&lt;div&gt;小于1&amp;lt;&amp;lt;32 就是未确认的消息，还能进一步根据时间筛选，进行重发&lt;/div&gt;&lt;div&gt;大于1&amp;gt;&amp;gt;32 的定期删除，防止列表过大&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" parent="bxa8RqcD89XLqhrJgpsZ-1" vertex="1">
           <mxGeometry x="534" y="855" width="380" height="60" as="geometry" />
         </mxCell>
@@ -1367,6 +1370,9 @@
           <mxGeometry x="0.0072" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="e5ygJ3nNOSe9Yrahaoav-0" value="每个消息16字节，15wqps，每秒会产生16*15w=240w字节=2.4G&lt;div&gt;消息体是共用的，不会占用很大空间&lt;/div&gt;&lt;div&gt;所以定期删除很重要，如果20s删除一次，那么会占用48G&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
+          <mxGeometry x="1030" y="1233" width="370" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
