@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-02T08:27:17.451Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="GNzPe2j5v-OHP4NPdDOJ" version="24.4.13" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2024-06-02T08:56:32.932Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="ucO-SlJTbGYWFyLVrA1f" version="24.4.13" type="github" pages="5">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -358,8 +358,8 @@
         <mxCell id="x6Jtk6zeUvlKm-oWEQXY-103" value="成员列表服务&lt;br&gt;异地容灾" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="-1050" y="560" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="x6Jtk6zeUvlKm-oWEQXY-104" value="PCU：30w&lt;br&gt;DAU：420w&lt;br&gt;单房间最大：10w&lt;br&gt;同时开播：6k&lt;br&gt;日活主播：4w" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;" parent="1" vertex="1">
-          <mxGeometry x="-347" y="90" width="120" height="90" as="geometry" />
+        <mxCell id="x6Jtk6zeUvlKm-oWEQXY-104" value="PCU：30w&lt;br&gt;DAU：420w&lt;br&gt;单房间最大：10w&lt;br&gt;日活主播：4w" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;" parent="1" vertex="1">
+          <mxGeometry x="-347" y="100" width="120" height="70" as="geometry" />
         </mxCell>
         <mxCell id="x6Jtk6zeUvlKm-oWEQXY-105" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="x6Jtk6zeUvlKm-oWEQXY-107" target="x6Jtk6zeUvlKm-oWEQXY-35" edge="1">
           <mxGeometry relative="1" as="geometry" />
