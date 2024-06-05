@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-05T13:29:14.140Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="CMFrVzAZQ7OsqhdGye-v" version="24.4.13" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2024-06-05T13:36:38.532Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="YTvLPGbtvzR7oU5s6OnS" version="24.4.13" type="github" pages="5">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -516,7 +516,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="live 的副本" id="hugfhMHL9A4iMEHUzqtO">
-    <mxGraphModel dx="3190" dy="1020" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="bxa8RqcD89XLqhrJgpsZ-0" />
         <mxCell id="bxa8RqcD89XLqhrJgpsZ-1" parent="bxa8RqcD89XLqhrJgpsZ-0" />
@@ -999,7 +999,7 @@
         <mxCell id="bxa8RqcD89XLqhrJgpsZ-130" value="msgid" style="rounded=0;whiteSpace=wrap;html=1;" parent="bxa8RqcD89XLqhrJgpsZ-1" vertex="1">
           <mxGeometry x="446" y="940" width="54" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="e5ygJ3nNOSe9Yrahaoav-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="bxa8RqcD89XLqhrJgpsZ-1" source="bxa8RqcD89XLqhrJgpsZ-131" target="e5ygJ3nNOSe9Yrahaoav-0">
+        <mxCell id="e5ygJ3nNOSe9Yrahaoav-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="bxa8RqcD89XLqhrJgpsZ-1" source="bxa8RqcD89XLqhrJgpsZ-131" target="e5ygJ3nNOSe9Yrahaoav-0" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bxa8RqcD89XLqhrJgpsZ-131" value="快速筛选：&lt;div&gt;小于1&amp;lt;&amp;lt;32 就是未确认的消息，还能进一步根据时间筛选，进行重发&lt;/div&gt;&lt;div&gt;大于1&amp;gt;&amp;gt;32 的定期删除，防止列表过大&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#d79b00;fillColor=#ffe6cc;" parent="bxa8RqcD89XLqhrJgpsZ-1" vertex="1">
@@ -1371,13 +1371,13 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="e5ygJ3nNOSe9Yrahaoav-0" value="每个消息16字节，15wqps，每秒会产生16*15w=240w字节=2.4G&lt;div&gt;消息体是共用的，不会占用很大空间&lt;/div&gt;&lt;div&gt;所以定期删除很重要，如果20s删除一次，那么会占用48G&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
+        <mxCell id="e5ygJ3nNOSe9Yrahaoav-0" value="每个消息16字节，15wqps，每秒会产生16*15w=240w字节=2.4G&lt;div&gt;消息体是共用的，不会占用很大空间&lt;/div&gt;&lt;div&gt;所以定期删除很重要，如果20s删除一次，那么会占用48G&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" parent="bxa8RqcD89XLqhrJgpsZ-1" vertex="1">
           <mxGeometry x="1030" y="1233" width="370" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WQOB_-elUw2iNiJAE-nh-5" value="心跳策略：&lt;div style=&quot;&quot;&gt;tcp的keepalive保活是7200s（2h），远远无法使用，没有数据交互运营商NAT几分钟就把连接销毁了&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;根据经验&lt;/div&gt;&lt;div style=&quot;&quot;&gt;中国联通移动，nat保活是5分钟&lt;/div&gt;&lt;div style=&quot;&quot;&gt;中国电信是28分钟&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;客户端会按照这个来发心跳，但是不是完全写死的，会根据失败情况动态调整&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
+        <mxCell id="WQOB_-elUw2iNiJAE-nh-5" value="心跳策略：&lt;div style=&quot;&quot;&gt;tcp的keepalive保活是7200s（2h），远远无法使用，没有数据交互运营商NAT几分钟就把连接销毁了&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;根据经验&lt;/div&gt;&lt;div style=&quot;&quot;&gt;中国联通移动，nat保活是5分钟&lt;/div&gt;&lt;div style=&quot;&quot;&gt;中国电信是28分钟&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;客户端会按照这个来发心跳，但是不是完全写死的，会根据失败情况动态调整&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" parent="bxa8RqcD89XLqhrJgpsZ-1" vertex="1">
           <mxGeometry x="1540" y="160" width="560" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="WQOB_-elUw2iNiJAE-nh-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.215;entryY=0.995;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="bxa8RqcD89XLqhrJgpsZ-1" source="bxa8RqcD89XLqhrJgpsZ-8" target="WQOB_-elUw2iNiJAE-nh-5">
+        <mxCell id="WQOB_-elUw2iNiJAE-nh-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.215;entryY=0.995;entryDx=0;entryDy=0;entryPerimeter=0;" parent="bxa8RqcD89XLqhrJgpsZ-1" source="bxa8RqcD89XLqhrJgpsZ-8" target="WQOB_-elUw2iNiJAE-nh-5" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1660" y="240" as="targetPoint" />
             <Array as="points">
