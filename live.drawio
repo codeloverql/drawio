@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-06T16:10:21.164Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="-3QA9HTJASpVH-pyb7Ls" version="24.4.14" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2024-06-06T16:55:39.259Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="l-P7iGWQ7QDnx7G-EpmC" version="24.4.14" type="github" pages="6">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1385,6 +1385,9 @@
               <mxPoint x="1660" y="350" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="bFB7nporcsFnesR4Epy5-0" value="mlock可以锁定mmap的page cache，防止被换出到磁盘，导致延时的增加" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
+          <mxGeometry x="-447" y="1670" width="410" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
