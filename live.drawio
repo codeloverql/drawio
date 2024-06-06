@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-05T15:33:50.033Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="GLmfXV3gLy-tbCGNHilJ" version="24.4.13" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2024-06-06T15:36:36.925Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="7JAq2Wrkx9ugO86XQUf1" version="24.4.14" type="github" pages="6">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -2020,6 +2020,141 @@
         </mxCell>
         <mxCell id="IDojizpqGfUpgZ52IpqX-25" value="raft" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="-120" y="50" width="90" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="B7_l87_Xbevseyv3yegD" name="网络">
+    <mxGraphModel dx="1088" dy="1892" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="160" width="480" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="XoVVz6Dzr-mfjlHxSKAl-2" target="XoVVz6Dzr-mfjlHxSKAl-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-2" value="源端口" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="160" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-3" value="目的端口" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="160" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-5" value="0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="195" y="-430" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-6" value="31" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="670" y="-430" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-7" value="seq" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="220" width="480" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-8" value="ack" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="270" width="480" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="XoVVz6Dzr-mfjlHxSKAl-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-9" value="Data&lt;div&gt;offset&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="320" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-10" value="3" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="265" y="-430" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-13" value="tcp的头部是变长的&lt;div&gt;需要标记数据的位置&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="20" y="330" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-14" value="&lt;span style=&quot;caret-color: rgb(31, 35, 40); color: rgb(31, 35, 40); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;Reserved&lt;/font&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="320" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-15" value="U&lt;div&gt;R&lt;/div&gt;&lt;div&gt;G&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="387" y="320" width="11" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-17" value="A&lt;div&gt;C&lt;/div&gt;&lt;div&gt;K&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="398" y="320" width="11" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-18" value="P&lt;div&gt;S&lt;/div&gt;&lt;div&gt;H&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="409" y="320" width="11" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-20" value="P&lt;div&gt;S&lt;/div&gt;&lt;div&gt;T&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="320" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-21" value="S&lt;div&gt;Y&lt;/div&gt;&lt;div&gt;N&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="320" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-23" value="F&lt;div&gt;I&lt;/div&gt;&lt;div&gt;N&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="320" width="10" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-24" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;-apple-system, BlinkMacSystemFont, Segoe UI, Noto Sans, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji&quot; color=&quot;#1f2328&quot;&gt;&lt;span style=&quot;caret-color: rgb(31, 35, 40);&quot;&gt;Windows&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="320" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-25" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;-apple-system, BlinkMacSystemFont, Segoe UI, Noto Sans, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji&quot; color=&quot;#1f2328&quot;&gt;&lt;span style=&quot;caret-color: rgb(31, 35, 40);&quot;&gt;checksum&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;caret-color: rgba(0, 0, 0, 0); color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; white-space: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bdiv%20style%3D%26quot%3Btext-align%3A%20left%3B%26quot%3B%26gt%3B%26lt%3Bfont%20face%3D%26quot%3B-apple-system%2C%20BlinkMacSystemFont%2C%20Segoe%20UI%2C%20Noto%20Sans%2C%20Helvetica%2C%20Arial%2C%20sans-serif%2C%20Apple%20Color%20Emoji%2C%20Segoe%20UI%20Emoji%26quot%3B%20color%3D%26quot%3B%231f2328%26quot%3B%26gt%3B%26lt%3Bspan%20style%3D%26quot%3Bcaret-color%3A%20rgb(31%2C%2035%2C%2040)%3B%26quot%3B%26gt%3BWindows%26lt%3B%2Fspan%26gt%3B%26lt%3B%2Ffont%26gt%3B%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22450%22%20y%3D%22320%22%20width%3D%22240%22%20height%3D%2260%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="380" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-26" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;-apple-system, BlinkMacSystemFont, Segoe UI, Noto Sans, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji&quot; color=&quot;#1f2328&quot;&gt;&lt;span style=&quot;caret-color: rgb(31, 35, 40);&quot;&gt;Urgent Pointer&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="380" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-27" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;-apple-system, BlinkMacSystemFont, Segoe UI, Noto Sans, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji&quot; color=&quot;#1f2328&quot;&gt;&lt;span style=&quot;caret-color: rgb(31, 35, 40);&quot;&gt;Options&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="440" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-28" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;-apple-system, BlinkMacSystemFont, Segoe UI, Noto Sans, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji&quot; color=&quot;#1f2328&quot;&gt;&lt;span style=&quot;caret-color: rgb(31, 35, 40);&quot;&gt;padding&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="440" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-30" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;-apple-system, BlinkMacSystemFont, Segoe UI, Noto Sans, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji&quot; color=&quot;#1f2328&quot;&gt;&lt;span style=&quot;caret-color: rgb(31, 35, 40);&quot;&gt;data&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="500" width="480" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="XoVVz6Dzr-mfjlHxSKAl-3" target="XoVVz6Dzr-mfjlHxSKAl-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-34" value="option" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="210" y="100" width="480" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-35" value="目的地址" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="210" y="40" width="480" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-36" value="源地址" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="210" y="-20" width="480" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-37" value="源地址" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="210" y="-80" width="480" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-42" value="头部校验和" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="-140" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-43" value="生存时间" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="-140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-45" value="协议代码" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="-140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-46" value="重组标识" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="-200" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-48" value="标识" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="-200" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-49" value="段偏移量" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="-200" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-52" value="版本" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="-260" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="XoVVz6Dzr-mfjlHxSKAl-9" target="XoVVz6Dzr-mfjlHxSKAl-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="-410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-53" value="头长" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="-260" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-54" value="服务类型" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="-260" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XoVVz6Dzr-mfjlHxSKAl-55" value="包裹总长" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="-260" width="240" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
