@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-16T15:20:38.061Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="7DriyCVwJpYp0zi9dfTj" version="24.5.4" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2024-06-16T15:21:42.078Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="hUOnNCSF4_2pPKyMIy7s" version="24.5.4" type="github" pages="6">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1634,6 +1634,9 @@
         <mxCell id="WQsOW7auwecNqORNe7UZ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WQsOW7auwecNqORNe7UZ-2" target="WQsOW7auwecNqORNe7UZ-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="WQsOW7auwecNqORNe7UZ-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WQsOW7auwecNqORNe7UZ-2" target="WQsOW7auwecNqORNe7UZ-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="WQsOW7auwecNqORNe7UZ-2" value="重构" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="853" y="1472" width="120" height="60" as="geometry" />
         </mxCell>
@@ -1641,6 +1644,9 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="WQsOW7auwecNqORNe7UZ-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WQsOW7auwecNqORNe7UZ-3" target="WQsOW7auwecNqORNe7UZ-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WQsOW7auwecNqORNe7UZ-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WQsOW7auwecNqORNe7UZ-3" target="WQsOW7auwecNqORNe7UZ-26">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="WQsOW7auwecNqORNe7UZ-3" value="核心链路的性能优化" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -1681,6 +1687,12 @@
         </mxCell>
         <mxCell id="WQsOW7auwecNqORNe7UZ-22" value="任务：&lt;div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;1.重构QA核心接口，划线解读，另外的接口老板其他同事来支援我&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;2.拆分python服务，并且在trpc-python中运行&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;3.问题生成接口&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
           <mxGeometry x="1250" y="1605" width="370" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="WQsOW7auwecNqORNe7UZ-24" value="不做服务几乎无法上线" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="843" y="1580" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WQsOW7auwecNqORNe7UZ-26" value="长文本下核心链路不通" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="843" y="1948" width="140" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
