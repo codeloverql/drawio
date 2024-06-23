@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-23T15:16:00.142Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="6TSoVEKC4_JlAz5cxnit" version="24.6.2" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2024-06-23T15:19:38.704Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="sQynmtCxReHjgqFEqb6O" version="24.6.2" type="github" pages="7">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1628,6 +1628,9 @@
         <mxCell id="qrGXtjuxRK-hj7xsiOmA-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WQsOW7auwecNqORNe7UZ-1" target="qrGXtjuxRK-hj7xsiOmA-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="qrGXtjuxRK-hj7xsiOmA-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WQsOW7auwecNqORNe7UZ-1" target="qrGXtjuxRK-hj7xsiOmA-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="WQsOW7auwecNqORNe7UZ-1" value="负责的事情" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1040" y="388" width="120" height="60" as="geometry" />
         </mxCell>
@@ -1870,6 +1873,9 @@
         </mxCell>
         <mxCell id="qrGXtjuxRK-hj7xsiOmA-31" value="1.有损服务&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;1.非核心接口下线，比如QA是核心，摘要解读非核心&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;2.非关键路径，允许降级服务，比如索引计算在路径上是非关键路径，允许失败&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;3.限流，入口进行限流，对单用户进行流控&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
           <mxGeometry x="1610" y="-45" width="470" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="qrGXtjuxRK-hj7xsiOmA-34" value="四象限工作法：&lt;div&gt;1.重要&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;1.在目标上，这件事是否在关键路径&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;比如这件事不做，这个目标一定完不成&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2.紧急&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;1.事情的deadline&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="930" y="505" width="250" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
