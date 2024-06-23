@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-23T15:11:46.286Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="eKsNd5PiHtK8BdGJHFKD" version="24.6.2" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2024-06-23T15:14:40.547Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="azxyxgCiVVHDz5gSN3PV" version="24.6.2" type="github" pages="7">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1691,11 +1691,11 @@
         <mxCell id="WQsOW7auwecNqORNe7UZ-22" value="任务：&lt;div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;1.重构QA核心接口，划线解读，另外的接口老板让其他同事来支援我&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;2.拆分python服务，并且在trpc-python中运行&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;3.问题生成接口&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="1610" y="353" width="390" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="WQsOW7auwecNqORNe7UZ-24" value="不做服务几乎无法上线" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;" parent="1" vertex="1">
-          <mxGeometry x="1203" y="328" width="140" height="30" as="geometry" />
+        <mxCell id="WQsOW7auwecNqORNe7UZ-24" value="不做服务几乎无法上线&lt;div&gt;重要且紧急&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;" parent="1" vertex="1">
+          <mxGeometry x="1203" y="323" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="WQsOW7auwecNqORNe7UZ-26" value="长文本下核心链路不通" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;" parent="1" vertex="1">
-          <mxGeometry x="1203" y="696" width="140" height="30" as="geometry" />
+        <mxCell id="WQsOW7auwecNqORNe7UZ-26" value="长文本下核心链路不通&lt;div&gt;重要但不紧急&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;" parent="1" vertex="1">
+          <mxGeometry x="1203" y="691" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="6VtWVIQksh9wmiBGitEk-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="6VtWVIQksh9wmiBGitEk-1" target="6VtWVIQksh9wmiBGitEk-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -1835,8 +1835,8 @@
         <mxCell id="qrGXtjuxRK-hj7xsiOmA-15" value="压测" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1213" y="-150" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="qrGXtjuxRK-hj7xsiOmA-17" value="0-1上线" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;" vertex="1" parent="1">
-          <mxGeometry x="1244" y="-40" width="60" height="30" as="geometry" />
+        <mxCell id="qrGXtjuxRK-hj7xsiOmA-17" value="0-1上线&lt;div&gt;重要且紧急&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="1234" y="-45" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="qrGXtjuxRK-hj7xsiOmA-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.483;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="qrGXtjuxRK-hj7xsiOmA-15" target="qrGXtjuxRK-hj7xsiOmA-17">
           <mxGeometry relative="1" as="geometry" />
