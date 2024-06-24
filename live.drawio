@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-23T15:40:03.238Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="Rp_1iAMaPB1b40X1NpPM" version="24.6.2" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2024-06-24T14:32:08.197Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="aaS3QhZo-z5wu3jxrn4r" version="24.6.2" type="github" pages="7">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -2181,34 +2181,34 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="NUvMHLy74Mf8xs66AC7l" name="第 5 页">
-    <mxGraphModel dx="2133" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram id="NUvMHLy74Mf8xs66AC7l" name="分布式">
+    <mxGraphModel dx="2261" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="IDojizpqGfUpgZ52IpqX-24" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-24" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-120" y="50" width="1150" height="390" as="geometry" />
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="IDojizpqGfUpgZ52IpqX-1" target="IDojizpqGfUpgZ52IpqX-2">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="IDojizpqGfUpgZ52IpqX-1" target="IDojizpqGfUpgZ52IpqX-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-5" value="leader心跳超时" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="IDojizpqGfUpgZ52IpqX-4">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-5" value="leader心跳超时" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="IDojizpqGfUpgZ52IpqX-4" vertex="1" connectable="0">
           <mxGeometry x="-0.0333" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-1" value="follower&lt;div&gt;跟随者&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-1" value="follower&lt;div&gt;跟随者&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="90" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="IDojizpqGfUpgZ52IpqX-2" target="IDojizpqGfUpgZ52IpqX-3">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="IDojizpqGfUpgZ52IpqX-2" target="IDojizpqGfUpgZ52IpqX-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-8" value="收到半数以上投票" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="IDojizpqGfUpgZ52IpqX-7">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-8" value="收到半数以上投票" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="IDojizpqGfUpgZ52IpqX-7" vertex="1" connectable="0">
           <mxGeometry x="0.0667" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="IDojizpqGfUpgZ52IpqX-2" target="IDojizpqGfUpgZ52IpqX-1">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="IDojizpqGfUpgZ52IpqX-2" target="IDojizpqGfUpgZ52IpqX-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="340" y="320" />
@@ -2216,23 +2216,23 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-14" value="发现更新的选举者" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="IDojizpqGfUpgZ52IpqX-13">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-14" value="发现更新的选举者" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="IDojizpqGfUpgZ52IpqX-13" vertex="1" connectable="0">
           <mxGeometry relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-2" value="candidate&lt;div&gt;选举者&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-2" value="candidate&lt;div&gt;选举者&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="310" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="IDojizpqGfUpgZ52IpqX-3" target="IDojizpqGfUpgZ52IpqX-1">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="IDojizpqGfUpgZ52IpqX-3" target="IDojizpqGfUpgZ52IpqX-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-12" value="有更新的选举者，term更大" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="IDojizpqGfUpgZ52IpqX-11">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-12" value="有更新的选举者，term更大" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="IDojizpqGfUpgZ52IpqX-11" vertex="1" connectable="0">
           <mxGeometry x="0.008" y="-4" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="IDojizpqGfUpgZ52IpqX-3" target="IDojizpqGfUpgZ52IpqX-1">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;dashed=1;" parent="1" source="IDojizpqGfUpgZ52IpqX-3" target="IDojizpqGfUpgZ52IpqX-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="640" y="110" />
@@ -2240,12 +2240,12 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-18" value="定期发送心跳，保证leader的地位" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="IDojizpqGfUpgZ52IpqX-17">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-18" value="定期发送心跳，保证leader的地位" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="IDojizpqGfUpgZ52IpqX-17" vertex="1" connectable="0">
           <mxGeometry y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="IDojizpqGfUpgZ52IpqX-3" target="IDojizpqGfUpgZ52IpqX-1">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="IDojizpqGfUpgZ52IpqX-3" target="IDojizpqGfUpgZ52IpqX-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="700" y="390" />
@@ -2253,15 +2253,15 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-23" value="日志复制给所有跟随者，半数以上确认则回复客户端" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="IDojizpqGfUpgZ52IpqX-22">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-23" value="日志复制给所有跟随者，半数以上确认则回复客户端" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="IDojizpqGfUpgZ52IpqX-22" vertex="1" connectable="0">
           <mxGeometry x="-0.0024" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-3" value="leader&lt;div&gt;主&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-3" value="leader&lt;div&gt;主&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="610" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IDojizpqGfUpgZ52IpqX-2" target="IDojizpqGfUpgZ52IpqX-2">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="IDojizpqGfUpgZ52IpqX-2" target="IDojizpqGfUpgZ52IpqX-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="340" y="170" />
@@ -2269,32 +2269,32 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-10" value="选举超时" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="IDojizpqGfUpgZ52IpqX-9">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-10" value="选举超时" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="IDojizpqGfUpgZ52IpqX-9" vertex="1" connectable="0">
           <mxGeometry x="-0.025" y="4" relative="1" as="geometry">
             <mxPoint x="2" y="4" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-15" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-15" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-10" y="250" as="sourcePoint" />
             <mxPoint x="70" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-16" value="开始" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-16" value="开始" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="5" y="198" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="IDojizpqGfUpgZ52IpqX-19" target="IDojizpqGfUpgZ52IpqX-3">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="IDojizpqGfUpgZ52IpqX-19" target="IDojizpqGfUpgZ52IpqX-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-21" value="提交日志" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="IDojizpqGfUpgZ52IpqX-20">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-21" value="提交日志" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="IDojizpqGfUpgZ52IpqX-20" vertex="1" connectable="0">
           <mxGeometry x="0.0154" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-19" value="client" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-19" value="client" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="860" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="IDojizpqGfUpgZ52IpqX-25" value="raft" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="IDojizpqGfUpgZ52IpqX-25" value="raft" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="-120" y="50" width="90" height="30" as="geometry" />
         </mxCell>
       </root>
