@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-24T14:32:08.197Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="aaS3QhZo-z5wu3jxrn4r" version="24.6.2" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2024-06-24T14:33:01.654Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="RIP7ynbq9CKNntgCetg1" version="24.6.2" type="github" pages="7">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -515,8 +515,8 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="live 的副本" id="hugfhMHL9A4iMEHUzqtO">
-    <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram name="live_解释" id="hugfhMHL9A4iMEHUzqtO">
+    <mxGraphModel dx="3088" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="bxa8RqcD89XLqhrJgpsZ-0" />
         <mxCell id="bxa8RqcD89XLqhrJgpsZ-1" parent="bxa8RqcD89XLqhrJgpsZ-0" />
@@ -1389,7 +1389,7 @@
         <mxCell id="bFB7nporcsFnesR4Epy5-0" value="mlock可以锁定mmap的page cache，防止被换出到磁盘，导致延时的增加" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#9673a6;fillColor=#e1d5e7;" parent="bxa8RqcD89XLqhrJgpsZ-1" vertex="1">
           <mxGeometry x="-447" y="1670" width="410" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="W3BF5M609fenWsnfe3d6-0" value="epoll" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="bxa8RqcD89XLqhrJgpsZ-1">
+        <mxCell id="W3BF5M609fenWsnfe3d6-0" value="epoll" style="rounded=1;whiteSpace=wrap;html=1;" parent="bxa8RqcD89XLqhrJgpsZ-1" vertex="1">
           <mxGeometry x="2068" y="780" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
