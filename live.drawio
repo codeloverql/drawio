@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-02T15:31:01.651Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="vqykd14pGikorQzXdTDx" version="24.6.4" type="github" pages="8">
+<mxfile host="app.diagrams.net" modified="2024-07-02T15:51:17.293Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2.1 Safari/605.1.15" etag="tAb2mGTzF-T4JziV0YuX" version="24.6.4" type="github" pages="8">
   <diagram name="live" id="U2sys6m2P0nSdcJm8TKS">
     <mxGraphModel dx="2960" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -2008,8 +2008,8 @@
         <mxCell id="R3oyDt61tSgvGFX3RYW5-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.533;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="R3oyDt61tSgvGFX3RYW5-27" target="R3oyDt61tSgvGFX3RYW5-29">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="R3oyDt61tSgvGFX3RYW5-31" value="buffer/cache:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;page cache，磁盘的缓存，可以被回收&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="430" y="280" width="230" height="60" as="geometry" />
+        <mxCell id="R3oyDt61tSgvGFX3RYW5-31" value="buffer/cache:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;page cache，磁盘的缓存，一般可以被回收，用共享的方式mmap的无法被释放&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="430" y="280" width="440" height="60" as="geometry" />
         </mxCell>
         <mxCell id="R3oyDt61tSgvGFX3RYW5-33" value="进程Res:&lt;div&gt;实际占用的物理内存&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;进程SHR:&lt;/div&gt;&lt;div&gt;进程间共享的&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
           <mxGeometry x="430" y="390" width="130" height="80" as="geometry" />
@@ -2028,6 +2028,24 @@
         </mxCell>
         <mxCell id="R3oyDt61tSgvGFX3RYW5-39" value="分析进程的热点函数" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
           <mxGeometry x="570" y="80" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R3oyDt61tSgvGFX3RYW5-41" value="netstat" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="260" y="625" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R3oyDt61tSgvGFX3RYW5-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.033;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="cFd6YUIKDhweKQFJBDla-3" target="R3oyDt61tSgvGFX3RYW5-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R3oyDt61tSgvGFX3RYW5-43" value="close_wait过多，说明被动关闭比较多" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="505" y="578" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R3oyDt61tSgvGFX3RYW5-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="R3oyDt61tSgvGFX3RYW5-41" target="R3oyDt61tSgvGFX3RYW5-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R3oyDt61tSgvGFX3RYW5-45" value="time_wait过多，说明主动关闭比较多" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="505" y="640" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="R3oyDt61tSgvGFX3RYW5-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.005;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="R3oyDt61tSgvGFX3RYW5-41" target="R3oyDt61tSgvGFX3RYW5-45">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
